@@ -11,7 +11,7 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className=" mt-5">
+    <div className="bg-gray-100 py-5 px-5 md:px-28">
         <div className="relative flex items-center justify-between">
        
             <h1 className="inline-flex items-center font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
@@ -45,7 +45,7 @@ const NavBar = () => {
             <div className="md:hidden">
                 {/* Dropdown Open Button */}
                 <button aria-label="Open Menu" title="Open Menu" onClick={() => setIsMenuOpen(true)} >
-                    <Bars3BottomRightIcon className="w-5 text-gray-600" />
+                    <Bars3BottomRightIcon className="w-8 text-gray-600" />
                 </button>
                 {isMenuOpen && (
                     <div className="absolute top-0 left-0 w-full z-10">
