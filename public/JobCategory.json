@@ -1,0 +1,26 @@
+[
+    {
+      "id" : "1", 
+      "logo": "https://cdn-icons-png.flaticon.com/512/1107/1107600.png",
+      "name": "Marketing",
+      "jobs": "200+"
+    },
+    {
+     "id" : "2", 
+      "logo": "https://cdn-icons-png.flaticon.com/512/1163/1163463.png",
+      "name": "Software & IT",
+      "jobs": "1.3K+"
+    },
+    {
+        "id" : "3", 
+      "logo": "https://cdn-icons-png.flaticon.com/512/2779/2779775.png",
+      "name": "Graphics Design",
+      "jobs": "200"
+    },
+    {
+        "id" : "4", 
+      "logo": "https://cdn-icons-png.flaticon.com/512/2179/2179306.png",
+      "name": "Fresher Jobs",
+      "jobs": "25K+"
+    }
+  ]

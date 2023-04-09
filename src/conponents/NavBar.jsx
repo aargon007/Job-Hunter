@@ -14,7 +14,7 @@ const NavBar = () => {
     <div className=" mt-5">
         <div className="relative flex items-center justify-between">
        
-            <h1 className="inline-flex items-center font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+            <h1 className="inline-flex items-center font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                 Job Hunter
             </h1>
 
@@ -40,7 +40,7 @@ const NavBar = () => {
                     </NavLink>
                 </li>
             </ul>
-            <button className="bg-violet-400 text-white font-semibold px-3 py-3 rounded-md hidden md:block">Start Applying</button>
+            <button className="btn-primary hidden md:block">Start Applying</button>
             {/* Mobile Navbar Section */}
             <div className="md:hidden">
                 {/* Dropdown Open Button */}
@@ -91,7 +91,7 @@ const NavBar = () => {
                                         </Link>
                                     </li>
                                 </ul>
-                                <button className="bg-violet-400 mt-5 text-white font-semibold px-3 py-3 rounded-md">Start Applying</button>
+                                <button className="btn-primary mt-5">Start Applying</button>
                             </nav>
                         </div>
                     </div>
