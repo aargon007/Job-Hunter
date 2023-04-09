@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "companyLogo": "https://www.journaltranscript.com/wp-content/uploads/2016/02/samsung-electronics.jpg",
+        "jobTitle": "Junior Software Engineer",
+        "companyName": "Samsung Electronics",
+        "remoteOrOnsite": "Onsite",
+        "location": "284 Mawsons Way, Newberry, SC 29108",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$60.7K - $76.9K",
+        "jobDescription": "This position is responsible for assiting in developing, coding, testing, debugging and customizing software solutions to business problems. This includes Full-Stack Software for browsers, desktops, tablets, and phones. Responsibilities span across database design, administration and use, webserver development and administration, project planning and management.",
+        "jobResponsibility": "Design and implement new features, fix bugs, and collaborate with team members to deliver high-quality code on time.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "3+ years of experience in software engineering",
+        "contactInformation": {
+            "phone": "123-456-7890",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": 2,
+        "companyLogo": "https://wholesgame.com/wp-content/uploads/Tencent-Sign-Outside-Building.jpg",
+        "jobTitle": "Marketing Project Manager",
+        "companyName": "Tencent",
+        "remoteOrOnsite": "Onsite",
+        "location": "Los Angeles, CA",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$99,600 - $182,600",
+        "jobDescription": "We're seeking a creative and analytical marketing manager to join our growing team.",
+        "jobResponsibility": "Develop and implement marketing campaigns, analyze data to optimize performance, and collaborate with cross-functional teams to drive business growth.",
+        "educationalRequirements": "Bachelor's degree in Marketing or related field",
+        "experiences": "5+ years of experience in marketing",
+        "contactInformation": {
+            "phone": "555-555-5555",
+            "email": "careers@abcco.com"
+        }
+    },
+    {
+        "id": 3,
+        "companyLogo": "https://blog.youmail.com/wp-content/uploads/sites/3/2019/04/YouMail-Logo.png",
+        "jobTitle": "Product Manager",
+        "companyName": "YouMail",
+        "remoteOrOnsite": "Remote",
+        "location": "Anywhere",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$50k - $120k",
+        "jobDescription": "YouMail is looking for a passionate, talented junior Product Manager to join our Product Management Team and help define and drive development of our applications and services. You will work alongside with talented designers and technologies to deliver products immediately into the hands of hundreds of millions of users. This position can be full-time or part-time and can be contract-based (if located outside of California).",
+        "jobResponsibility": "Develop and prioritize product features, analyze customer feedback, and collaborate with cross-functional teams to deliver high-quality products on time.",
+        "educationalRequirements": "Bachelor's degree in Business, Computer Science, or related field",
+        "experiences": "7+ years of experience in product management",
+        "contactInformation": {
+            "phone": "555-123-4567",
+            "email": "careers@xyzinc.com"
+        }
+    },
+    {
+        "id": 4,
+        "companyLogo": "https://www.mojodigitalsolutions.com.au/wp-content/uploads/2017/04/logoMojo_dot-e1493083854969.png",
+        "jobTitle": "Frontend Developer",
+        "companyName": "Mojo Solutions",
+        "remoteOrOnsite": "Remote",
+        "location": "Anywhere",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$100,000 to $160,000",
+        "jobDescription": "We need a wizard who can create beautiful frontend experiences to a very high level of polish. You're a perfect fit for this role if you're highly detail oriented, and you ship fast.",
+        "jobResponsibility": "Design and implement user interface components, fix bugs, and collaborate with team members to deliver high-quality code on time.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "3+ years of experience in frontend development with JavaScript",
+        "contactInformation": {
+            "phone": "123-456-7890",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": 5,
+        "companyLogo": "https://media.sketchfab.com/models/fac1f46645e54c1394ebd9e7fea69c49/thumbnails/984ff05007344a1a9ea1591d36c36619/df4f417cd09f44a99369625b9b4446e6.jpeg",
+        "jobTitle": "Backend Developer",
+        "companyName": "Actum Lab",
+        "remoteOrOnsite": "Remote",
+        "location": "Austin, TX 78701",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$60,000 - $80,000",
+        "jobDescription": "As a backend developer, you will be working on creating innovative solutions and web apps from Actum Lab’s area of expertise on both internal and commercial projects.",
+        "jobResponsibility": "Design and implement RESTful APIs, optimize database queries, and collaborate with team members to deliver high-performance code on time.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "5+ years of experience in backend development with JavaScript",
+        "contactInformation": {
+            "phone": "555-123-4567",
+            "email": "jobs@actumlab.com"
+        }
+    },
+    {
+        "id": 6,
+        "companyLogo": "https://media.glassdoor.com/sqll/225927/dev-technology-group-squarelogo-1380216697299.png",
+        "jobTitle": "Full Stack Developer",
+        "companyName": "Dev Technology",
+        "remoteOrOnsite": "Remote",
+        "location": "Anywhere",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "Negotiable",
+        "jobDescription": "We're looking for a versatile full stack developer with expertise in JavaScript to help build and maintain our web application.",
+        "jobResponsibility": "This application developer position is for a project that performs Agile Software Development for systems that are used to support our client's mission. This position will involve software development from requirements gathering phase through coding and testing; communicating status including issues and risks to team; collaborating with team members to reach problem resolution; learning new skill sets on the job in a fast-paced environment.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "7+ years of experience in full stack development with JavaScript",
+        "contactInformation": {
+            "phone": "555-123-4567",
+            "email": "careers@xyzinc.com"
+        }
+    }
+]
