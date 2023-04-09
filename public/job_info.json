@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "companyLogo": "https://www.journaltranscript.com/wp-content/uploads/2016/02/samsung-electronics.jpg",
+        "companyLogo": "https://3dprint.com/wp-content/uploads/2015/02/Samsung-Electronics.gif",
         "jobTitle": "Junior Software Engineer",
         "companyName": "Samsung Electronics",
         "remoteOrOnsite": "Onsite",
-        "location": "284 Mawsons Way, Newberry, SC 29108",
+        "location": "284 Mawsons Way, Newberry, USA",
         "fulltimeOrParttime": "Full-time",
         "salary": "$60.7K - $76.9K",
         "jobDescription": "This position is responsible for assiting in developing, coding, testing, debugging and customizing software solutions to business problems. This includes Full-Stack Software for browsers, desktops, tablets, and phones. Responsibilities span across database design, administration and use, webserver development and administration, project planning and management.",
@@ -19,7 +19,7 @@
     },
     {
         "id": 2,
-        "companyLogo": "https://wholesgame.com/wp-content/uploads/Tencent-Sign-Outside-Building.jpg",
+        "companyLogo": "https://logos-download.com/wp-content/uploads/2016/04/Tencent_logo_logotype_emblem_2.png",
         "jobTitle": "Marketing Project Manager",
         "companyName": "Tencent",
         "remoteOrOnsite": "Onsite",
@@ -73,11 +73,11 @@
     },
     {
         "id": 5,
-        "companyLogo": "https://media.sketchfab.com/models/fac1f46645e54c1394ebd9e7fea69c49/thumbnails/984ff05007344a1a9ea1591d36c36619/df4f417cd09f44a99369625b9b4446e6.jpeg",
+        "companyLogo": "https://media.designrush.com/agencies/259127/conversions/Actum-Lab-logo-profile.jpg",
         "jobTitle": "Backend Developer",
         "companyName": "Actum Lab",
         "remoteOrOnsite": "Remote",
-        "location": "Austin, TX 78701",
+        "location": "Austin, USA",
         "fulltimeOrParttime": "Full-time",
         "salary": "$60,000 - $80,000",
         "jobDescription": "As a backend developer, you will be working on creating innovative solutions and web apps from Actum Lab’s area of expertise on both internal and commercial projects.",

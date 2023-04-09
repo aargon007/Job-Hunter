@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from './Header';
 import JobCategory from './JobCategory';
+import Jobs from './Jobs';
 
 const Home = () => {
     return (
-        <div className='space-y-16 mb-10'>
+        <div className='space-y-20 mb-10'>
             <Header></Header>
             <JobCategory></JobCategory>
+            <Jobs></Jobs>
         </div>
     );
 };
