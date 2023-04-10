@@ -1,13 +1,17 @@
 import { CurrencyDollarIcon, EnvelopeIcon, IdentificationIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { addToDb, getJobData } from '../utilities/localDb';
 
 const JobDetails = () => {
     const jobInfoData = useLoaderData();
     const {jobTitle, salary, jobResponsibility, jobDescription, experiences, educationalRequirements, contactInformation, location, id} = jobInfoData;
-    console.log(jobInfoData);
+    
+    const getJobIdFrmLocal = getJobData();  
+
     return (
         <div>
+            <h1 className='bg-gray-100 px-5 md:px-28 text-2xl font-bold text-center py-10'>Job Details</h1>
             <div className='px-5 md:px-28 flex gap-10 flex-col md:flex-row mt-10'>
                 <div className='space-y-5 md:w-8/12'>
                     <p>
@@ -33,7 +37,7 @@ const JobDetails = () => {
                         <div className='space-y-2'>
                             <p className='flex items-center gap-2'>
                                 <CurrencyDollarIcon  className='w-5 text-blue-500'></CurrencyDollarIcon>
-                                <span className='font-semibold'>Salary : </span> {salary} 
+                                <span className='font-semibold'>Salary : </span> {salary}  (Annualy)
                             </p>
                             <p className='flex items-center gap-2'>
                                 <IdentificationIcon  className='w-5 text-blue-500'></IdentificationIcon>
@@ -57,7 +61,9 @@ const JobDetails = () => {
                             </p>
                         </div>
                     </div>
-                    <button className='btn-primary'>Apply Now</button>
+                    <button className='btn-primary w-full' {...(getJobIdFrmLocal.includes(id) && {disabled:true})}  onClick={()=> addToDb(id)}>
+                        {getJobIdFrmLocal.includes(id) ? "You already Applied This Job" : "Apply Now"}
+                    </button>
                 </div>
             </div>
         </div>

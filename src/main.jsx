@@ -9,6 +9,7 @@ import AppliedJob from './conponents/AppliedJob'
 import Blog from './conponents/Blog'
 import JobDetails from './conponents/JobDetails'
 import { getJobDetails } from './utilities/getJobDetails'
+import { getJobDataFrmLocal } from './utilities/localDb'
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,8 @@ const router = createBrowserRouter([
       },
       {
         path : '/applied-jobs',
-        element : <AppliedJob></AppliedJob>
+        element : <AppliedJob></AppliedJob>,
+        loader : getJobDataFrmLocal
       },
       {
         path : '/blog',
