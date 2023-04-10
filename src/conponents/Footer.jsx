@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='bg-[#1A1919] px-5 md:px-28 py-10 text-white'>
+        <div className='bg-[#1A1919] px-5 md:px-28 py-10 text-white mt-10'>
             <div className='flex flex-col md:flex-row justify-between space-y-5 md:space-y-0'>
                 <div className='space-y-3'>
                     <h1 className='text-2xl font-bold'>Job Hunter</h1>

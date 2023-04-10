@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import JobItem from './JobItem';
 
 const Jobs = () => {
-    const jobData = useLoaderData();
+    const [jobData, setJobData] = useState([]);
     const [showAll, setShowAll] = useState(false);
+    useEffect(() => {
+        const loadData = async () => {
+            const res = await fetch('job_info.json');
+            const data = await res.json();
+            setJobData(data)
+        }
+        loadData()
+    }, [])
 
     return (
         <div className='space-y-5 px-5 md:px-28'>
