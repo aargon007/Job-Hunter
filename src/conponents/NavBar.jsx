@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from 'react'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link, NavLink } from 'react-router-dom'
 import {
     Bars3BottomRightIcon,
@@ -8,7 +9,10 @@ import {
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
+  const handleNavigation = ()=>{
+    navigate("/all-jobs")
+  }
   return (
     <div className="bg-gray-100 py-5 px-5 md:px-28">
         <div className="relative flex items-center justify-between">
@@ -39,7 +43,9 @@ const NavBar = () => {
                     </NavLink>
                 </li>
             </ul>
-            <button className="btn-primary hidden md:block">Start Applying</button>
+            <button onClick={handleNavigation} className="btn-primary hidden md:block">
+                    Start Applying
+            </button>
             {/* Mobile Navbar Section */}
             <div className="md:hidden">
                 {/* Dropdown Open Button */}

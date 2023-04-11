@@ -11,6 +11,8 @@ import JobDetails from './conponents/JobDetails'
 import { getJobDetails } from './utilities/getJobDetails'
 import { getJobDataFrmLocal } from './utilities/localDb'
 import ErrorPage from './conponents/ErrorPage'
+import Jobs from './conponents/Jobs'
+import StartApplyBtn from './conponents/StartApplyBtn'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
       {
         path : '/',
         element : <Home></Home>,
+      },
+      {
+        path : '/all-jobs',
+        element : <StartApplyBtn></StartApplyBtn>
       },
       {
         path : '/job/:id',

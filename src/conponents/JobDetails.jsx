@@ -2,12 +2,23 @@ import { CurrencyDollarIcon, EnvelopeIcon, IdentificationIcon, MapPinIcon, Phone
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { addToDb, getJobData } from '../utilities/localDb';
+import { toast } from 'react-toastify';
 
 const JobDetails = () => {
     const jobInfoData = useLoaderData();
     const {jobTitle, salary, jobResponsibility, jobDescription, experiences, educationalRequirements, contactInformation, location, id} = jobInfoData;
     
-    const getJobIdFrmLocal = getJobData();  
+    const getJobIdFrmLocal = getJobData(); 
+    const [ids, setIds] = useState(getJobIdFrmLocal);
+
+    const applyNowBtn = (id) =>{
+        console.log(ids);
+        if(!(ids.includes(id))){
+            toast.success("You have successfully apply for this post.");
+            setIds([...ids, id])
+        }
+        addToDb(id);
+    }
 
     return (
         <div>
@@ -61,8 +72,8 @@ const JobDetails = () => {
                             </p>
                         </div>
                     </div>
-                    <button className='btn-primary w-full' {...(getJobIdFrmLocal.includes(id) && {disabled:true})}  onClick={()=> addToDb(id)}>
-                        {getJobIdFrmLocal.includes(id) ? "You already Applied This Job" : "Apply Now"}
+                    <button className='btn-primary w-full' {...(ids.includes(id) && {disabled:true})}  onClick={()=> applyNowBtn(id)}>
+                        {ids.includes(id) ? "Submitted" : "Apply Now"}
                     </button>
                 </div>
             </div>

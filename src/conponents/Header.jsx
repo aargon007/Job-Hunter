@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Lottie from 'lottie-react'
+import jobHunting from  '../assets/jobHunting.json';
 const Header = () => {
     return (
         <div className='flex md:flex-row flex-col-reverse md:gap-20 gap-6 items-center bg-gray-100 py-5 md:py-0 px-5 md:px-28'>
@@ -8,7 +9,9 @@ const Header = () => {
                 <p className='text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                 <button className="btn-primary">Get Started</button>
             </div>
-            <img src='/hardy.png' alt="" className='w-full  md:h-[500px] md:px-20' />
+            <div className='relative w-full bg-gray-100 md:h-[500px] md:px-20'>
+                    <Lottie animationData={jobHunting} loop={true} />
+            </div>
         </div>
     );
 };
