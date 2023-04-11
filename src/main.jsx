@@ -10,11 +10,13 @@ import Blog from './conponents/Blog'
 import JobDetails from './conponents/JobDetails'
 import { getJobDetails } from './utilities/getJobDetails'
 import { getJobDataFrmLocal } from './utilities/localDb'
+import ErrorPage from './conponents/ErrorPage'
 
 const router = createBrowserRouter([
   {
     path : '/',
     element : <App></App>,
+    errorElement : <ErrorPage></ErrorPage>,
     children : [
       {
         path : '/',
