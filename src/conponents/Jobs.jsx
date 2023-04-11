@@ -6,7 +6,7 @@ const Jobs = () => {
     const [showAll, setShowAll] = useState(false);
     useEffect(() => {
         const loadData = async () => {
-            const res = await fetch('job_info.json');
+            const res = await fetch('/job_info.json');
             const data = await res.json();
             setJobData(data)
         }

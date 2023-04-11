@@ -5,7 +5,7 @@ const JobCategory = () => {
     const [category, setCategory] = useState([]);
     useEffect(() => {
         const loadData = async ()=>{
-            const res =await fetch('JobCategory.json');
+            const res =await fetch('/JobCategory.json');
             const data = await res.json();
             setCategory(data)
         }

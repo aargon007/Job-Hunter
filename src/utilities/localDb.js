@@ -10,7 +10,7 @@ const getJobData = () => {
 }
 
 const getJobDataFrmLocal = async () => {
-    const res = await fetch('job_info.json');
+    const res = await fetch('/job_info.json');
     const data = await res.json();
 
     const appliedJob = getJobData();
