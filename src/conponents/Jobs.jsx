@@ -14,7 +14,7 @@ const Jobs = () => {
     }, [])
 
     return (
-        <div className='space-y-5 px-5 md:px-28'>
+        <div className='space-y-6 px-5 md:px-28'>
             <h1 className='text-center text-3xl font-bold'>Featured Jobs</h1>
             <p className='text-center text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className='grid grid-cols-1 gap-10 md:grid-cols-2'>

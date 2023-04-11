@@ -8,11 +8,14 @@ import {
   } from '@heroicons/react/24/solid'
 
 const NavBar = () => {
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const navigate = useNavigate();
   const handleNavigation = ()=>{
     navigate("/all-jobs")
   }
+
   return (
     <div className="bg-gray-100 py-5 px-5 md:px-28">
         <div className="relative flex items-center justify-between">
@@ -46,6 +49,7 @@ const NavBar = () => {
             <button onClick={handleNavigation} className="btn-primary hidden md:block">
                     Start Applying
             </button>
+
             {/* Mobile Navbar Section */}
             <div className="md:hidden">
                 {/* Dropdown Open Button */}
@@ -66,8 +70,7 @@ const NavBar = () => {
                                 </div>
                                 {/* Dropdown menu close button */}
                                 <div>
-                                    <button aria-label="Close Menu" title="Close Menu"
-                                    onClick={() => setIsMenuOpen(false)} >
+                                    <button aria-label="Close Menu" title="Close Menu"  onClick={() => setIsMenuOpen(false)} >
                                         <XMarkIcon className="w-5 text-gray-600" />
                                     </button>
                                 </div>
@@ -76,27 +79,27 @@ const NavBar = () => {
                             <nav>
                                 <ul className="space-y-4">
                                     <li>
-                                        <Link to="/" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400">
+                                        <Link to="/" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>
                                             Home
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/statistics"  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400">
+                                        <Link to="/statistics"  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>
                                             Statistics
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/applied-jobs"  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400">
+                                        <Link to="/applied-jobs"  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>
                                             Applied Jobs
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/blog" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400" >
+                                        <Link to="/blog" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>
                                         Blog
                                         </Link>
                                     </li>
                                 </ul>
-                                <button className="btn-primary mt-5">Start Applying</button>
+                                <button className="btn-primary mt-5" onClick={()=> {setIsMenuOpen(false);handleNavigation()}}>Start Applying</button>
                             </nav>
                         </div>
                     </div>

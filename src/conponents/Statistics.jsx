@@ -45,8 +45,8 @@ const Statistics = () => {
                     text: 'Assignment Mark Chart',
                     position : 'bottom',
                     padding : {
-                        top: 20,
-                        bottom : 20
+                        top: 30,
+                        bottom : 10
                     },
                     font : {
                         weight: 'bold',

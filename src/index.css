@@ -11,5 +11,5 @@
   }
 
 .btn-primary {
-  @apply text-white font-semibold px-3 py-3 rounded-md bg-gradient-to-r from-[#7E90FE] to-[#9873FF]
+  @apply text-white font-medium px-3 py-3 rounded-md bg-gradient-to-r from-[#1a3aee] to-[#e73abc] hover:bg-gradient-to-r hover:from-[#2d387a] hover:to-[#c44ea6]
 }

@@ -11,7 +11,6 @@ const Home = () => {
             <Header></Header>
             <JobCategory></JobCategory>
             <Jobs></Jobs>
-            <Footer></Footer>
         </div>
     );
 };

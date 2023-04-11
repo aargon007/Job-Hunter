@@ -9,11 +9,13 @@ const AppliedJob = () => {
 
     const [btnName, setBtnName] = useState("Filter By");
     const [isFilterOpen, setIsFilterOpen] = useState(false);
-    const [filterData, setFilterData] = useState([]);
+    const [filterData, setFilterData] = useState(totalAppliedJobs);
 
     const handleJobType = (type)=>{
         const applyData = [...totalAppliedJobs];
+        console.log(applyData);
         const data = applyData.filter(rd => rd.remoteOrOnsite == type);
+        console.log(data);
         setBtnName(type);
         setFilterData(data);
         setIsFilterOpen(false);
@@ -37,19 +39,13 @@ const AppliedJob = () => {
                                 Remote
                             </li>
                             <li className="cursor-pointer select-none p-2 hover:bg-gray-200" onClick={()=> handleJobType("Onsite")}>
-                                OnSite
+                                Onsite
                             </li>
                     </ul>
                     )}
                 </div>
             </div>
             <div className='px-5 md:px-28 my-10 space-y-5'>
-                {
-                    (filterData == false) && totalAppliedJobs.map(jobInfo => <AppliedJobdetails
-                        jobInfo={jobInfo}
-                        key={jobInfo.id}
-                    ></AppliedJobdetails>)
-                }
                 {
                   filterData &&  filterData.map(jobInfo => <AppliedJobdetails
                         jobInfo={jobInfo}
